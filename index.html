@@ -1,3 +1,714 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Coding Projects</title>
+    <style>
+        /* Add your custom CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; /* Set a light background color */
+            margin: 0;
+            padding: 0;
+            color: #333; /* Set a dark text color */
+        }
 
-<a>Hello World</a>
+        h1 {
+            text-align: left; /* Left justify the header */
+            margin-top: 50px;
+            color: #333; /* Set a dark text color */
+        }
+
+        .project {
+            background-color: #fff; /* Set a white background color */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+        }
+
+        .project h2 {
+            color: #333; /* Set a dark text color */
+            margin-bottom: 10px;
+        }
+
+        .project p {
+            color: #777; /* Set a medium text color */
+            margin-bottom: 20px;
+        }
+
+        .project a {
+            background-color: #333; /* Set a dark background color */
+            color: #fff; /* Set a light text color */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        .project a:hover {
+            background-color: #555; /* Set a slightly darker background color on hover */
+        }
+
+        .sidebar {
+            background-color: #f2f2f2; /* Set a light background color */
+            color: #333; /* Set a dark text color */
+            padding: 20px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 200px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 20px;
+        }
+
+        .sidebar p {
+            margin-bottom: 10px;
+        }
+
+        .sidebar img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+        }
+
+        .sidebar a {
+            color: #333; /* Set a dark text color */
+            text-decoration: none;
+            margin-bottom: 10px;
+        }
+
+        .sidebar a:hover {
+            text-decoration: underline;
+        }
+
+        .main-content {
+            margin-left: 220px; /* Adjust this value to create space for the sidebar */
+        }
+
+        .resume {
+            background-color: #fff; /* Set a white background color */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .resume h2 {
+            color: #333; /* Set a dark text color */
+            margin-bottom: 10px;
+        }
+
+        .resume p {
+            color: #777; /* Set a medium text color */
+            margin-bottom: 20px;
+        }
+
+        .resume a {
+            background-color: #333; /* Set a dark background color */
+            color: #fff; /* Set a light text color */
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 3px;
+            transition: background-color 0.3s ease;
+        }
+
+        .resume a:hover {
+            background-color: #555; /* Set a slightly darker background color on hover */
+        }
+
+        .resume iframe {
+            width: 100%;
+            height: 500px;
+            margin-top: 20px;
+        }
+
+        .skills {
+            background-color: #fff; /* Set a white background color */
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            text-align: center;
+        }
+
+        .skills h2 {
+            color: #333; /* Set a dark text color */
+            margin-bottom: 10px;
+        }
+
+        .skills .skill-column {
+            width: 30%;
+            margin-bottom: 10px;
+        }
+
+        .skills .skill-column .skill-name {
+            color: #777; /* Set a medium text color */
+            margin-bottom: 5px;
+        }
+
+        .skills .skill-column .progress-bar {
+            width: 100%;
+            height: 10px;
+            background-color: #f2f2f2; /* Set a light background color */
+            border-radius: 5px;
+        }
+
+        .skills .skill-column .progress-bar .progress {
+            height: 100%;
+            border-radius: 5px;
+            background-color: #333; /* Set a dark background color */
+        }
+
+        /* Custom CSS for color accents */
+        .accent-blue {
+            background-color: #b3e6ff; /* Set a light blue accent color */
+        }
+
+        .accent-green {
+            background-color: #b3ffb3; /* Set a light green accent color */
+        }
+
+        .accent-yellow {
+            background-color: #ffffb3; /* Set a light yellow accent color */
+        }
+
+        .accent-red {
+            background-color: #ffb3b3; /* Set a light red accent color */
+        }
+    </style>
+
+    <link rel="icon" href="lucki-icon.png" type="image/x-icon">
+
+</head>
+<body>
+    <!-- Rest of the HTML code -->
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Coding Projects</title>
+        <style>
+            /* Add your custom CSS styles here */
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #333;
+                margin: 0;
+                padding: 0;
+                color: #fff;
+            }
+    
+            h1 {
+                text-align: left; /* Left justify the header */
+                margin-top: 50px;
+                color: #fff;
+            }
+    
+            .project {
+                background-color: #444;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                transition: transform 0.3s ease;
+            }
+    
+            .project:hover,
+            .resume:hover,
+            .skills:hover {
+                transform: translateY(-5px);
+            }
+    
+            .project h2 {
+                color: #fff;
+                margin-bottom: 10px;
+            }
+    
+            .project p {
+                color: #ccc;
+                margin-bottom: 20px;
+            }
+    
+            .project a {
+                background-color: #fff;
+                color: #333;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 3px;
+                transition: background-color 0.3s ease;
+            }
+    
+            .project a:hover {
+                background-color: #eee;
+            }
+    
+            .sidebar {
+                background-color: #555;
+                color: #fff;
+                padding: 20px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    
+            .sidebar h2 {
+                margin-bottom: 20px;
+            }
+    
+            .sidebar p {
+                margin-bottom: 10px;
+            }
+    
+            .sidebar img {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                margin-bottom: 20px;
+            }
+    
+            .sidebar a {
+                color: #fff;
+                text-decoration: none;
+                margin-bottom: 10px;
+            }
+    
+            .sidebar a:hover {
+                text-decoration: underline;
+            }
+    
+            .main-content {
+                margin-left: 220px; /* Adjust this value to create space for the sidebar */
+            }
+    
+            .resume {
+                background-color: #444;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                margin: 20px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+    
+            .resume h2 {
+                color: #fff;
+                margin-bottom: 10px;
+            }
+    
+            .resume p {
+                color: #ccc;
+                margin-bottom: 20px;
+            }
+    
+            .resume a {
+                background-color: #fff;
+                color: #333;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 3px;
+                transition: background-color 0.3s ease;
+            }
+    
+            .resume a:hover {
+                background-color: #eee;
+            }
+    
+            .resume iframe {
+                width: 100%;
+                height: 500px;
+                margin-top: 20px;
+            }
+    
+            .skills {
+                background-color: #444;
+                border-radius: 5px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                padding: 20px;
+                margin: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                text-align: center;
+            }
+    
+            .skills h2 {
+                color: #fff;
+                margin-bottom: 10px;
+            }
+    
+            .skills .skill-column {
+                width: 30%;
+                margin-bottom: 10px;
+            }
+    
+            .skills .skill-column .skill-name {
+                color: #ccc;
+                margin-bottom: 5px;
+            }
+    
+            .skills .skill-column .progress-bar {
+                width: 100%;
+                height: 10px;
+                background-color: #555;
+                border-radius: 5px;
+            }
+    
+            .skills .skill-column .progress-bar .progress {
+                height: 100%;
+                border-radius: 5px;
+                background-color: #fff;
+            }
+
+            
+
+            /* The grid: Four equal columns that floats next to each other */
+            .column {
+            float: left;
+            width: 25%;
+            padding: 10px;
+            }
+
+            /* Style the images inside the grid */
+            .column img {
+            opacity: 0.8;
+            cursor: pointer;
+            }
+
+            .column img:hover {
+            opacity: 1;
+            }
+
+            /* Clear floats after the columns */
+            .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            }
+
+            /* The expanding image container (positioning is needed to position the close button and the text) */
+            .container {
+            position: relative;
+            display: none;
+            }
+
+            /* Expanding image text */
+            #imgtext {
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            color: white;
+            font-size: 20px;
+            }
+
+            /* Closable button inside the image */
+            .closebtn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+            }
+        </style>
+
+        
+    </head>
+    <body>
+        <div class="sidebar">
+            <img src="profile.png" alt="Profile Picture">
+            <h2>About Me</h2>
+            <p style="text-align: center;">My name is Ethan Leonard and I am a computer science student at Bellevue College, pursuing an Associate of Arts and Sciences degree through the Running Start program. I am passionate about coding and learning new technologies, such as ChatGPT and robotics, that can enhance human-computer interaction and solve real-world problems.
+            </p>
+            <br>
+            <a href="resume.pdf">Download Resume</a>
+            <br>
+            <div class="social-icons">
+                <a href="https://github.com/Rootbeerfloat82" target="_blank">
+                    <img src="github-icon.png" alt="GitHub Icon" style="width: 30px; height: 30px; margin-right: 5px;">
+                </a>
+                <a href="https://www.linkedin.com/in/ethan-leonard-878541204/" target="_blank">
+                    <img src="linkedin-icon.png" alt="LinkedIn Icon" style="width: 30px; height: 30px; margin-right: 5px;">
+                </a>
+                <a href="mailto:ethan.leonard821@gmail.com">
+                    <img src="email-icon.png" alt="Email Icon" style="width: 30px; height: 30px; margin-right: 5px;">
+                </a>
+            </div>
+        </div>
+    
+        <h1 style="margin-left: 250px; text-align: left;">Ethan Leonard - Project Portfolio</h1> <!-- Left justify the header -->
+    
+        <div class="main-content">
+            <div class="project">
+                <h2><a target="_blank" href="https://tinyurl.com/cs-stalkers">C$ Stalkers</a></h2>
+                    <!-- The grid: four columns -->
+                    <div style="margin-left: 16%;" class="row">
+                        <div class="column">        
+                            <img style="max-width: 100%" src="csstalkers-login.png"  onclick="myFunction(this, 1);">
+                        </div>
+                        <div class="column">
+                            <img style="max-width: 100%" src="stalker-table.png"  onclick="myFunction(this, 1);">
+                        </div>
+                        <div class="column">
+                            <img style="max-width: 100%" src="stalker-chart.png"  onclick="myFunction(this, 1);">
+                        </div>
+                    </div>
+                    <div style="margin-left: 16%;" class="row">
+                        <div class="column">
+                            <img style="max-width: 100%" src="stalker-assistant2.png"  onclick="myFunction(this, 1);">
+                        </div>
+                        <div class="column">
+                            <img style="max-width: 100%" src="stalker-assistant1.png"  onclick="myFunction(this, 1);">
+                        </div>
+                        <div class="column">
+                            <img style="max-width: 100%" src="stalker-closed.png"  onclick="myFunction(this, 1);">
+                        </div> 
+                    </div>
+                    
+                    <!-- The expanding image container -->
+                    <div class="container">
+                        <!-- Close the image -->
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    
+                        <!-- Expanded image -->
+                        <img id="expandedImg1" style="width:100%">
+                    
+                        <!-- Image text -->
+                        <div id="imgtext"></div>
+                    </div>
+                    
+                <p>Experience the thrill of the stock market in real-time with our cutting-edge Flask Python website. Dive into the world of finance with our interactive stock simulator powered by live API data, providing an authentic and dynamic trading environment. Stay engaged and informed as our website features two AI chat assistants, offering valuable insights, answering queries, and guiding you through your investment journey. Witness your progress come to life with automatically updating charts that reflect real-time stock values, allowing you to track your portfolio's performance seamlessly. Whether you're a seasoned investor or a curious beginner, our Flask website offers a user-friendly and immersive experience, combining the excitement of a live stock market with the convenience of AI-powered assistance and visually appealing, dynamically updating charts.</p>
+                <a target="_blank" href="https://github.com/Rootbeerfloat82/CS_Stalkers">View Code</a>
+            </div>
+
+            <div class="project">
+                <h2><a target="_blank" href="https://www.bccomputerprogramingclub.com/">BC Computer Programming Club Website</h2></a>
+        
+                <!-- The grid: four columns -->
+                <div style="margin-left: 16%;" class="row">
+                    <div class="column">        
+                    <img style="max-width: 100%" src="bccpc.png"  onclick="myFunction(this, 2);">
+                    </div>
+                    <div class="column">
+                    <img style="max-width: 100%"src="cpc-news.png"  onclick="myFunction(this, 2);">
+                    </div>
+                    <div class="column">
+                    <img style="max-width: 100%"src="cpc-gallery .png"  onclick="myFunction(this, 2);">
+                    </div>
+                    <div class="column">
+                    <img style="max-width: 100%"src="cpc-about.png"  onclick="myFunction(this, 2);">
+                    </div>
+                    <div class="column">
+                    <img style="max-width: 100%" src="cpc-home.png"  onclick="myFunction(this, 2);">
+                    </div>
+
+                </div>
+                
+                <!-- The expanding image container -->
+                <div class="container">
+                    <!-- Close the image -->
+                    <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                
+                    <!-- Expanded image -->
+                    <img id="expandedImg2" style="width:100%">
+                
+                    <!-- Image text -->
+                    <div id="imgtext"></div>
+                </div>
+
+                <p>Welcome to the Bellevue College Club website, a collaborative masterpiece crafted by the talents of BC college students using Node.js, React, Express, HTML, CSS, and JavaScript. Immerse yourself in a seamless user experience, where our dynamic and engaging interface invites you to explore the diverse array of clubs thriving on campus. Powered by Node.js and Express, the website ensures a smooth and responsive performance, while the integration of React adds a layer of interactivity and modernity. Easily navigate through the multitude of clubs using our intuitive search bar, connecting you with like-minded individuals and fostering a sense of community. Join us on this digital journey, where the creativity and skill of Bellevue College students converge to bring you an online platform that celebrates the rich tapestry of campus life.</p>
+                <a target="_blank" href="https://github.com/BC-Computer-Programming-Club/WebDevTeam">View Code</a>
+            </div>
+
+            <div class="project">
+                <h2><a target="_blank" href="https://rootbeerfloat82.itch.io/eyeball-hunt">Eyeball Hunt</a></h2>
+                    <!-- The grid: four columns -->
+                    <div style="margin-left: 16%;" class="row">
+                        <div class="column">        
+                        <img style="max-width: 100%" src="eyeball-ui.png"  onclick="myFunction(this, 3);">
+                        </div>
+                        <div class="column">
+                        <img style="max-width: 100%"src="eye-gameplay.png"  onclick="myFunction(this, 3);">
+                        </div>
+                        <div class="column">
+                        <img style="max-width: 100%"src="eyeball-gameover.png"  onclick="myFunction(this, 3);">
+                        </div>
+                        <div class="column">
+                            <img style="max-width: 100%"src="eyeball-download.png"  onclick="myFunction(this, 3);">
+                        </div>
+    
+                    </div>
+                    
+                    <!-- The expanding image container -->
+                    <div class="container">
+                        <!-- Close the image -->
+                        <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+                    
+                        <!-- Expanded image -->
+                        <img id="expandedImg3" style="width:100%">
+                    
+                        <!-- Image text -->
+                        <div id="imgtext"></div>
+                    </div>
+                <p>Dive into the exciting world of 'Eyeball Hunt,' my latest creation in Unity that promises an adrenaline-pumping experience! Channel your inner ninja as you face a barrage of eyeballs and other objects hurtling towards you with realistic physics. Similar to the iconic Fruit Ninja, the game challenges you to slice the right targets while skillfully avoiding dangerous bombs. The interactive UI enhances the gaming experience, providing real-time feedback and keeping you on the edge of your seat. With multiple difficulty levels, 'Eyeball Hunt' caters to both casual players and seasoned pros, ensuring an engaging and challenging adventure for everyone willing to take on the slicing frenzy.</p>
+                <a target="_blank" href="https://github.com/Rootbeerfloat82/EyeBall-Hunt">View Code</a>
+            </div>
+    
+            <!-- Add more project divs as needed -->
+    
+            <div class="skills">
+                <h2>Skills</h2>
+                <div class="skill-column">
+                    <div class="skill">
+                        <div class="skill-name">Python</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="skill">
+                        <div class="skill-name">Flask</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="skill">
+                        <div class="skill-name">HTML</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="skill">
+                        <div class="skill-name">C#</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <!-- Add more skills as needed -->
+                </div>
+                <div class="skill-column">
+                    <div class="skill">
+                        <div class="skill-name">Java</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 70%;"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="skill">
+                        <div class="skill-name">Django</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="skill">
+                        <div class="skill-name">CSS</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 80%;"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="skill">
+                        <div class="skill-name">SQL</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 75%;"></div>
+                        </div>
+                    </div>
+                    <!-- Add more skills as needed -->
+                </div>
+                <div class="skill-column">
+                    <div class="skill">
+                        <div class="skill-name">JavaScript</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 50%;"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="skill">
+                        <div class="skill-name">Node.js</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="skill">
+                        <div class="skill-name">Express</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 30%;"></div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="skill">
+                        <div class="skill-name">Markdown</div>
+                        <div class="progress-bar">
+                            <div class="progress" style="width: 20%;"></div>
+                        </div>
+                    </div>
+                    <!-- Add more skills as needed -->
+                </div>
+            </div>
+    
+            <div class="resume">
+                <h2>Resume</h2>
+                <iframe src="resume.pdf"></iframe>
+                <p>Click the button below to download my resume.</p>
+                <a href="resume.pdf">Download Resume</a>
+            </div>
+        </div>
+    
+        <script>
+            // Add your custom JavaScript here
+            // You can use JavaScript to add animations or interactivity to the page
+            function myFunction(imgs, int) {
+                // Get the expanded image
+                let image = "expandedImg" 
+                image+=int;
+                var expandImg = document.getElementById(image);
+                // Get the image text
+                var imgText = document.getElementById("imgtext");
+                // Use the same src in the expanded image as the image being clicked on from the grid
+                expandImg.src = imgs.src;
+                // Use the value of the alt attribute of the clickable image as text inside the expanded image
+                imgText.innerHTML = imgs.alt;
+                // Show the container element (hidden with CSS)
+                expandImg.parentElement.style.display = "block";
+            }
+        </script>
+    </body>
+</html>
+    
